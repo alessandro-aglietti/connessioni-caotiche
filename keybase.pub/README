@@ -1,0 +1,9 @@
+The whole application is hosted on Keybase filesystem "kbfs"
+
+https://keybase.io/docs/kbfs
+
+[...] there is no sync model. The files stream in on demand.
+
+[...] As a proof-of-concept, https://keybase.pub is a website that serves static content straight out of /keybase/public. You can see this application at https://aqquadro.keybase.pub/connessioni-caotiche.
+
+./deploy.sh simply rsync ./connessioni-caotiche under vcs with my /keybase/public/aqquadro/connessioni-caotiche streaming folder.
