@@ -1,0 +1,19 @@
+{
+  "name": "connessioni-caotiche",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "index" : "watchify js/index.js -o js/index.bundle.js -v",
+    "index:build" : "browserify js/index.js > js/index.bundle.js",
+    "build": "npm run index:build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "watchify": "^3.11.1"
+  }
+}

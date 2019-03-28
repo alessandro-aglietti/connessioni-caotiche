@@ -1,0 +1,11 @@
+start watchify on index bundle
+
+npm run index
+
+build withouth watch
+
+npm run index:build
+
+build all
+
+npm run build

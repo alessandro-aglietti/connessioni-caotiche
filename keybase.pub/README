@@ -7,3 +7,13 @@ https://keybase.io/docs/kbfs
 [...] As a proof-of-concept, https://keybase.pub is a website that serves static content straight out of /keybase/public. You can see this application at https://aqquadro.keybase.pub/connessioni-caotiche.
 
 ./deploy.sh simply rsync ./connessioni-caotiche under vcs with my /keybase/public/aqquadro/connessioni-caotiche streaming folder.
+
+What is behind the curtain?
+
+- simple ECMAScript 6 https://caniuse.com/#feat=es6 ~ 11% can update their browsers too
+- no webpack please
+- browserify because without require statement we go nowhere
+- use libraries only if needed
+- no uglify, minify and other -ing things because users need to be able to debug running JS on their browser
+- virtual, shadow, shallow DOM yourself. Mustache.js and innerHTML are enough
+

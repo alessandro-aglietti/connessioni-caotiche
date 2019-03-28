@@ -5,4 +5,6 @@ set -x -e
 
 DEPLOY_SRC="$(dirname $0)/connessioni-caotiche"
 
-rsync -v --checksum -r --delete-during $DEPLOY_SRC /keybase/public/aqquadro
+npm run --prefix=$DEPLOY_SRC build
+
+rsync --exclude 'node_modules' -v --checksum -r --delete-during $DEPLOY_SRC /keybase/public/aqquadro
